@@ -74,8 +74,8 @@ function News() {
 
                     {newsValues.length > 0 &&
                         newsValues.map((newz: postType, idx: number) => (
-                            <Col sm={12} md={6} lg={4} className="news-list-row" key={idx}>
-                                <div className="card news-item">
+                            <Col sm={12} md={6} lg={4} className="news-list-row" key={idx} >
+                                <div className="card news-item" style={{ animationDelay: `${idx * 0.25}s` }}>
                                     {newz?.coverImage ? (
                                         <img
                                             src={urlFor(newz.coverImage).url()}

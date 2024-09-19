@@ -50,6 +50,9 @@
     border: none;
     overflow: hidden; /* Ensure content stays within the card */
     transition: transform 0.3s ease; /* Smooth transition for the card */
+    opacity: 0; /* Start hidden */
+    transform: translateY(25px); /* Slightly lower */
+    animation: fadeIn 1s forwards; /* Animation */
 }
 
 .news-list-container .news-list-row .card.news-item:hover .card-img-top {
@@ -89,4 +92,11 @@
 .news-list .news-list-container .news-list-row .card.news-item .card-body .created-at {
     display: flex;
     font-size: 11px;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* Move to original position */
+    }
 }
