@@ -38,12 +38,6 @@ function News() {
         fetchNewsData();
     }, []);
 
-
-
-    if (error) {
-        return <div>{error}</div>;
-    }
-
     return (
         <div className="news-container">
             <div className="news-banner">
