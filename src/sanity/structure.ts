@@ -13,7 +13,6 @@ export const structure: StructureResolver = (S) =>
       // Content Section
       S.documentTypeListItem("post").title("Posts"),
       S.documentTypeListItem("event").title("Events"),
-      S.documentTypeListItem("news").title("News"),
       S.documentTypeListItem("category").title("Categories"),
       S.divider(),
 

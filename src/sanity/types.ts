@@ -143,60 +143,6 @@ export type Category = {
   description?: string;
 };
 
-export type News = {
-  _id: string;
-  _type: "news";
-  _createdAt: string;
-  _updatedAt: string;
-  _rev: string;
-  language?: string;
-  title?: string;
-  mainImage?: {
-    asset?: {
-      _ref: string;
-      _type: "reference";
-      _weak?: boolean;
-      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
-    };
-    hotspot?: SanityImageHotspot;
-    crop?: SanityImageCrop;
-    alt?: string;
-    _type: "image";
-  };
-  content?: Array<{
-    children?: Array<{
-      marks?: Array<string>;
-      text?: string;
-      _type: "span";
-      _key: string;
-    }>;
-    style?: "normal" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "blockquote";
-    listItem?: "bullet" | "number";
-    markDefs?: Array<{
-      href?: string;
-      _type: "link";
-      _key: string;
-    }>;
-    level?: number;
-    _type: "block";
-    _key: string;
-  } | {
-    asset?: {
-      _ref: string;
-      _type: "reference";
-      _weak?: boolean;
-      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
-    };
-    hotspot?: SanityImageHotspot;
-    crop?: SanityImageCrop;
-    caption?: string;
-    alt?: string;
-    _type: "image";
-    _key: string;
-  }>;
-  createdAt?: string;
-};
-
 export type SanityPreviewUrlSecret = {
   _id: string;
   _type: "sanity.previewUrlSecret";
@@ -417,7 +363,6 @@ export type Post = {
   language?: string;
   title?: string;
   slug?: Slug;
-  excerpt?: string;
   coverImage?: {
     asset?: {
       _ref: string;
@@ -584,7 +529,7 @@ export type InternationalizedArrayReference = Array<{
   _key: string;
 } & InternationalizedArrayReferenceValue>;
 
-export type AllSanitySchemaTypes = SanityImagePaletteSwatch | SanityImagePalette | SanityImageDimensions | SanityFileAsset | Geopoint | BlockContent | AddressSchema | Teachers | Colleagues | Category | News | SanityPreviewUrlSecret | MediaTag | TranslationMetadata | InternationalizedArrayReferenceValue | Navigation | NavigationItem | SiteSettings | HomePage | Page | Event | RecurringDates | Post | Author | SanityImageCrop | SanityImageHotspot | SanityImageAsset | SanityAssetSourceData | SanityImageMetadata | Slug | InternationalizedArrayReference;
+export type AllSanitySchemaTypes = SanityImagePaletteSwatch | SanityImagePalette | SanityImageDimensions | SanityFileAsset | Geopoint | BlockContent | AddressSchema | Teachers | Colleagues | Category | SanityPreviewUrlSecret | MediaTag | TranslationMetadata | InternationalizedArrayReferenceValue | Navigation | NavigationItem | SiteSettings | HomePage | Page | Event | RecurringDates | Post | Author | SanityImageCrop | SanityImageHotspot | SanityImageAsset | SanityAssetSourceData | SanityImageMetadata | Slug | InternationalizedArrayReference;
 export declare const internalGroqTypeReferenceTo: unique symbol;
 // Source: ./src/sanity/lib/queries.ts
 // Variable: settingsQuery
@@ -597,7 +542,7 @@ export type IndexQueryResult = Array<{
   title: string | null;
   date: null;
   _updatedAt: string;
-  excerpt: string | null;
+  excerpt: null;
   coverImage: {
     asset?: {
       _ref: string;
@@ -655,7 +600,7 @@ export type PostAndMoreStoriesQueryResult = {
     title: string | null;
     date: null;
     _updatedAt: string;
-    excerpt: string | null;
+    excerpt: null;
     coverImage: {
       asset?: {
         _ref: string;
@@ -710,7 +655,7 @@ export type PostAndMoreStoriesQueryResult = {
     title: string | null;
     date: null;
     _updatedAt: string;
-    excerpt: string | null;
+    excerpt: null;
     coverImage: {
       asset?: {
         _ref: string;
@@ -740,7 +685,7 @@ export type PostBySlugQueryResult = {
   title: string | null;
   date: null;
   _updatedAt: string;
-  excerpt: string | null;
+  excerpt: null;
   coverImage: {
     asset?: {
       _ref: string;

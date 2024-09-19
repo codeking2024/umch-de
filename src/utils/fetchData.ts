@@ -1,6 +1,6 @@
 import { client } from "../sanity/lib/client";
 import { eventType, navigationType } from "@/utils/interface";
-import { News } from "../sanity/types";
+import { Post } from "../sanity/types";
 
 const lang: string = "de";
 
@@ -16,10 +16,10 @@ export async function getEventData(types: string, limit: string) {
   return eventData;
 }
 
-export async function getNewsData(types: string, limit: string) {
-  const query: string = `*[_type == 'news' && language == '${lang}']${limit} | order(createdAt desc) {${types}}`;
-  const newsData: News[] = await fetchData(query);
-  return newsData;
+export async function getPostData(types: string, limit: string) {
+  const query: string = `*[_type == "post" && language == '${lang}']${limit} | order(date desc, _updatedAt desc) {${types}}`;
+  const postData: Post[] = await fetchData(query);
+  return postData;
 }
 
 export async function fetchData(query: string) {

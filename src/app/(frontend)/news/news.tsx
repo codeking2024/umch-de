@@ -1,28 +1,35 @@
-'use client';
+"use client";
 
-import React, { useState, useEffect } from 'react'
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import { PortableText } from 'next-sanity';
-import { News as newsType } from "@/sanity/types";
-import { getNewsData } from "@/utils/fetchData";
+import React, { useState, useEffect } from "react";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import { PortableText } from "next-sanity";
+import { Post as postType } from "@/sanity/types";
+import { getPostData } from "@/utils/fetchData";
 import { urlFor } from "@/sanity/lib/image";
 import { dateConvertorWithYear } from "./../../../utils/dateConvertor";
 
 import "./news.css";
 
 function News() {
-    const [newsValues, setNewsValues] = useState<newsType[]>([]);
+    const [newsValues, setNewsValues] = useState<postType[]>([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
         const fetchNewsData = async () => {
             try {
-                const newsData = await getNewsData("title, createdAt, mainImage, content", "");
-                setNewsValues(newsData);
+                const postData = await getPostData(
+                    `_id,
+                title,
+                publishedAt,
+                coverImage,
+                "slug": slug.current,
+                "author": author->{name, picture},
+                content`, ``);
+                setNewsValues(postData);
             } catch (err) {
-                setError('Failed to fetch event data.');
+                setError("Failed to fetch event data.");
             } finally {
                 setLoading(false);
             }
@@ -31,9 +38,7 @@ function News() {
         fetchNewsData();
     }, []);
 
-    if (loading) {
-        return <div>Loading...</div>;
-    }
+
 
     if (error) {
         return <div>{error}</div>;
@@ -41,40 +46,69 @@ function News() {
 
     return (
         <div className="news-container">
-            <div className='news-banner'>
-                <div className='news-title'>
+            <div className="news-banner">
+                <div className="news-title">
                     <h1>News</h1>
                 </div>
-                <div className='news-banner-bg'>
-                    <img src="/background/cover-press-area.jpg" alt='cover-press-area.jpg' />
+                <div className="news-banner-bg">
+                    <img
+                        src="/background/cover-press-area.jpg"
+                        alt="cover-press-area.jpg"
+                    />
                 </div>
             </div>
-            <div className='news-list'>
-                <Row className='news-list-container'>
+            <div className="news-list">
+                <Row className="news-list-container">
                     {
-                        newsValues.length > 0 && newsValues.map((newz: newsType, idx: number) => (
-                            <Col sm={12} md={6} lg={4} className='news-list-row' key={idx}>
+                        loading && <div className="d-flex justify-content-center">
+                            <div className="spinner-border text-secondary" role="status">
+                                <span className="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                    }
+                    {
+                        error && <div className="alert alert-danger" role="alert">
+                            {error}
+                        </div>
+                    }
+
+                    {newsValues.length > 0 &&
+                        newsValues.map((newz: postType, idx: number) => (
+                            <Col sm={12} md={6} lg={4} className="news-list-row" key={idx}>
                                 <div className="card news-item">
-                                    {
-                                        newz?.mainImage ? <img src={urlFor(newz.mainImage).url()} className="card-img-top" alt={newz?.mainImage?.alt || ''} /> : ""
-                                    }
+                                    {newz?.coverImage ? (
+                                        <img
+                                            src={urlFor(newz.coverImage).url()}
+                                            className="card-img-top"
+                                            alt={newz?.coverImage?.alt || ""}
+                                        />
+                                    ) : (
+                                        ""
+                                    )}
                                     <div className="card-body">
                                         <h5 className="card-title">{newz.title}</h5>
-                                        <div className='card-content'>
-                                            {newz?.content ? <PortableText value={newz?.content} /> : ""}
+                                        <div className="card-content">
+                                            {newz?.content && newz.content.length > 0 ? (
+                                                <PortableText value={newz?.content[0]} />
+                                            ) : (
+                                                ""
+                                            )}
                                         </div>
-                                        {
-                                            newz?.createdAt ? <div className='created-at'>{dateConvertorWithYear(newz.createdAt)}</div> : ""
-                                        }
+                                        {newz?.publishedAt ? (
+                                            <div className="created-at">
+                                                {dateConvertorWithYear(newz.publishedAt)}
+                                            </div>
+                                        ) : (
+                                            ""
+                                        )}
                                     </div>
                                 </div>
                             </Col>
-                        ))
-                    }
+                        ))}
                 </Row>
             </div>
-        </div >
-    )
+        </div>
+    );
 }
 
-export default News
+export default News;

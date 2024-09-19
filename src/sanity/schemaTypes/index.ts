@@ -1,10 +1,9 @@
 import { type SchemaTypeDefinition } from "sanity";
-import {blockContentType} from './blockContentType'
+import { blockContentType } from "./blockContentType";
 import categorySchema from "./posts/categorySchema";
 import postSchema from "./posts/postSchema";
 import authorSchema from "./people/authorSchema";
 import eventSchema from "./posts/eventSchema";
-import newsSchema from "./posts/newsSchema";
 import homeSchema from "./pages/homeSchema";
 import pageSchema from "./pages/pageSchema";
 import settingSchema from "./settings/settingSchema";
@@ -18,7 +17,6 @@ export const schema: { types: SchemaTypeDefinition[] } = {
   types: [
     homeSchema,
     pageSchema,
-    newsSchema,
     postSchema,
     authorSchema,
     categorySchema,
@@ -29,7 +27,6 @@ export const schema: { types: SchemaTypeDefinition[] } = {
     addressSchema,
     navigationSchema,
     navigationItemSchema,
-    blockContentType
+    blockContentType,
   ],
 };
-
