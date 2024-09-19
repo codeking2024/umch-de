@@ -56,7 +56,7 @@ function News() {
                             <Col sm={12} md={6} lg={4} className='news-list-row' key={idx}>
                                 <div className="card news-item">
                                     {
-                                        newz?.mainImage ? <img src={urlFor(newz.mainImage)} className="card-img-top" alt={newz?.mainImage?.alt || ''} /> : ""
+                                        newz?.mainImage ? <img src={urlFor(newz.mainImage).url()} className="card-img-top" alt={newz?.mainImage?.alt || ''} /> : ""
                                     }
                                     <div className="card-body">
                                         <h5 className="card-title">{newz.title}</h5>

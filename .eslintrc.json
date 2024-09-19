@@ -6,6 +6,7 @@
     "react/no-unescaped-entities": "off",
     "@typescript-eslint/no-var-requires": "off",
     "@typescript-eslint/no-unused-vars": "off",
-    "jsx-a11y/alt-text": "off"
+    "jsx-a11y/alt-text": "off",
+    "@typescript-eslint/no-require-imports": "off"
   }
 }
