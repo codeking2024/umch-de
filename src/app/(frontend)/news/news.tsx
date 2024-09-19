@@ -8,6 +8,7 @@ import { Post as postType } from "@/sanity/types";
 import { getPostData } from "@/utils/fetchData";
 import { urlFor } from "@/sanity/lib/image";
 import { dateConvertorWithYear } from "./../../../utils/dateConvertor";
+import eventBus from "@/utils/eventBus";
 
 import "./news.css";
 
@@ -16,26 +17,38 @@ function News() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
 
-    useEffect(() => {
-        const fetchNewsData = async () => {
-            try {
-                const postData = await getPostData(
-                    `_id,
-                title,
-                publishedAt,
-                coverImage,
-                "slug": slug.current,
-                "author": author->{name, picture},
-                content`, ``);
-                setNewsValues(postData);
-            } catch (err) {
-                setError("Failed to fetch event data.");
-            } finally {
-                setLoading(false);
-            }
-        };
+    const fetchNewsData = async (lang: string) => {
+        try {
+            const postData = await getPostData(
+                `_id,
+            title,
+            publishedAt,
+            coverImage,
+            "slug": slug.current,
+            "author": author->{name, picture},
+            content`, ``, lang);
+            setNewsValues(postData);
+        } catch (err) {
+            setError("Failed to fetch event data.");
+        } finally {
+            setLoading(false);
+        }
+    };
 
-        fetchNewsData();
+    useEffect(() => {
+        fetchNewsData('de');
+    }, []);
+
+    useEffect(() => {
+        const handleLangEvent = (lang: string) => {
+            fetchNewsData(lang);
+        }
+
+        eventBus.on('change-language', handleLangEvent);
+
+        return () => {
+            eventBus.off('change-language', handleLangEvent);
+        }
     }, []);
 
     return (
@@ -66,10 +79,16 @@ function News() {
                         </div>
                     }
 
+                    {
+                        (!loading && newsValues.length == 0) && <div className="alert alert-info text-center" role="alert">
+                            There is no news data yet.
+                        </div>
+                    }
+
                     {newsValues.length > 0 &&
                         newsValues.map((newz: postType, idx: number) => (
                             <Col sm={12} md={6} lg={4} className="news-list-row" key={idx} >
-                                <div className="card news-item" style={{ animationDelay: `${idx * 0.25}s` }}>
+                                <div className="card news-item" style={{ animationDelay: `${idx * 0.3}s` }}>
                                     {newz?.coverImage ? (
                                         <img
                                             src={urlFor(newz.coverImage).url()}

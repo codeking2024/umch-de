@@ -16,8 +16,8 @@ export async function getEventData(types: string, limit: string) {
   return eventData;
 }
 
-export async function getPostData(types: string, limit: string) {
-  const query: string = `*[_type == "post" && language == '${lang}']${limit} | order(date desc, _updatedAt desc) {${types}}`;
+export async function getPostData(types: string, limit: string, _lang: string) {
+  const query: string = `*[_type == "post" && language == '${_lang}']${limit} | order(date desc, _updatedAt desc) {${types}}`;
   const postData: Post[] = await fetchData(query);
   return postData;
 }
