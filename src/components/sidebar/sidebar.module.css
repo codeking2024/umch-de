@@ -1,0 +1,70 @@
+/* Sidebar.css */
+
+.sidebar {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+.applyButton {
+    writing-mode: vertical-lr; /* Rotate text */
+    background-color: #ffeb3b; /* Adjust to match the button background color */
+    padding: 1.25rem!important;
+    margin-bottom: 10px;
+    margin-right: 0px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.iconContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #005572;
+}
+
+.iconItem {
+    margin: 10px 0;
+}
+
+.iconItem img {
+    width: 48px; /* Adjust icon size */
+    height: 48px; /* Adjust icon size */
+}
+
+.cls1 {
+    clip-path: url(#clippath);
+}
+
+.cls2, .cls3 {
+    fill: none;
+}
+
+.cls2, .cls4 {
+    stroke-width: 0px;
+}
+
+.cls3 {
+    stroke: #ffea43;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.4px;
+}
+
+.cls5 {
+    clip-path: url(#clippath-1);
+}
+
+.cls4 {
+    fill: #ffea43;
+}
+
+.borderYellow{
+    border-color: #ffea43 !important;
+}

@@ -1,0 +1,36 @@
+.mainBg {
+    background-image: url("/bilder/Blue Color gradient2.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 150px auto;
+}
+
+.bgGradient {
+    background: rgb(100,199,242);
+    background: linear-gradient(90deg, rgba(100,199,242,1) 0%, rgba(0,79,112,1) 67%);
+}
+
+.bgDark {
+    background: rgb(0,79,112);
+    background: linear-gradient(0deg, rgba(0,79,112,1) 0%, rgba(0,45,71,1) 100%);
+}
+
+.imgFit {
+    height: 200px !important;
+    object-fit: cover;
+}
+.imgObjectFit {
+    object-fit: cover;
+}
+
+.btnYellow {
+    background-color: #fbe949 ;
+    border-color: #fbe949;
+    color: #1b3a54;
+}
+
+.btnYellow:hover {
+    background-color: #f5eeb7;
+    color: #1b3a54;
+    border-color: #f5eeb7;
+}

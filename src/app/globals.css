@@ -1,0 +1,50 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.carousel-control-prev {
+    left: 35% !important;
+    top: 90% !important;
+}
+
+.carousel-control-next {
+    right: 35% !important;
+    top: 90% !important;
+}
+
+u {
+    text-underline-offset: 6px;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #fbe949;
+}
+
+.bgGradient {
+    background: rgb(100,199,242);
+    background: linear-gradient(90deg, rgba(100,199,242,1) 0%, rgba(0,79,112,1) 67%);
+}
+
+.bgDark {
+    background: rgb(0,79,112);
+    background: linear-gradient(0deg, rgba(0,79,112,1) 0%, rgba(0,45,71,1) 100%);
+}
+
+.owl-item {
+    opacity: 0.3;
+}
+
+.owl-item  h6 {
+    display: none;
+}
+.owl-item.center {
+    opacity: 1;
+}
+
+.owl-item.center h6{
+    display: block;
+}
+

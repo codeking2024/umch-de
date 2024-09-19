@@ -1,0 +1,100 @@
+.bgWithImage {
+    position: relative; /* Ensure the pseudo-element is positioned relative to the parent */
+}
+
+.bgWithImage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("/bilder/Blue Color gradient2.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 120px auto;
+}
+
+.bgGradient {
+    background: rgb(100,199,242);
+    background: linear-gradient(90deg, rgba(100,199,242,1) 0%, rgba(0,79,112,1) 67%);
+}
+
+.bgDark {
+    background: rgb(0,79,112);
+    background: linear-gradient(0deg, rgba(0,79,112,1) 0%, rgba(0,45,71,1) 100%);
+}
+
+.imgFit {
+    height: 200px !important;
+    object-fit: cover;
+}
+
+.imgObjectFit {
+    object-fit: cover;
+}
+
+.txtYellow{
+    color: #fbe949;
+}
+.btnYellow {
+    background-color: #fbe949 ;
+    border-color: #fbe949;
+    color: #1b3a54;
+}
+
+.btnYellow:hover {
+    background-color: #f5eeb7;
+    color: #1b3a54;
+    border-color: #f5eeb7;
+}
+
+.bgSlide{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgSlide1{
+    background-image: url("/links/klinikum-luedenscheid-gebaeude-website.jpg");
+    width: 300px;
+    height: 500px;
+}
+
+.bgSlide2{
+    background-image: url("/links/2023-07-13-Pre-Medical-Course-Welcome-Day-UMCH-7049.jpg");
+    width: 300px;
+    height: 500px;
+
+}
+
+.bgSlide3{
+    background-image: url("/links/2023-07-13-Pre-Medical-Course-Welcome-Day-UMCH-7157.jpg");
+    width: 300px;
+    height: 500px;
+
+}
+
+.bgSlide4{
+    background-image: url("/links/2023-07-13-Pre-Medical-Course-Welcome-Day-UMCH-7049.jpg");
+    width: 300px;
+    height: 500px;
+
+}
+
+.bgSlide5{
+    background-image: url("/links/2023-05-05-UMFST-UMCH-Days-2023-5201-3.jpg");
+    width: 300px;
+    height: 500px;
+}
+
+.rightExtended {
+    width: 86%;
+    margin-right: -20% !important; /* Adjust the value as needed */
+}
+
+
+.positionAbsolute {
+    top: 0;
+    bottom: 0;
+    left: 0;
+}

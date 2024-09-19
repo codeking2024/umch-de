@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_2" data-name="Ebene 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 53.2 51.2">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2, .cls-4 {
+        stroke: #ffea43;
+      }
+
+      .cls-1, .cls-4 {
+        stroke-width: 2.5px;
+      }
+
+      .cls-2 {
+        stroke-linejoin: round;
+        stroke-width: 2.4px;
+      }
+
+      .cls-2, .cls-4 {
+        stroke-linecap: round;
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-3 {
+        stroke-width: 0px;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-3" width="53.2" height="51.2"/>
+    </clipPath>
+  </defs>
+  <g id="Ebene_1-2" data-name="Ebene 1">
+    <g class="cls-5">
+      <g>
+        <path class="cls-2" d="M21.3,1.1h26.3c2.4,0,4.4,1.9,4.4,4.3v12.9c0,2.4-2,4.3-4.4,4.3h-15.5l-8.2,5.6v-5.6c.1,0-2.5,0-2.5,0-2.4,0-4.4-1.9-4.4-4.3V5.4c0-2.4,2-4.3,4.4-4.3h-.1Z"/>
+        <circle class="cls-1" cx="12.5" cy="32.3" r="5.7"/>
+        <path class="cls-4" d="M1.3,49.9c0-5,5-9.1,11.2-9.1s11.2,4.1,11.2,9.1"/>
+      </g>
+    </g>
+  </g>
+</svg>

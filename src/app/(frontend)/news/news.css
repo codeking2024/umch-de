@@ -1,0 +1,84 @@
+.news-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.news-container .news-banner {
+    display: flex;
+    height: 290px;
+    overflow: hidden;
+    background-color: white;
+}
+.news-container .news-title {
+    position: absolute;
+    width: 100%;
+    text-transform: uppercase;
+    color: white;
+    height: 290px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.2);
+
+}
+
+.news-container .news-banner .news-banner-bg img {
+    width: 100%;
+}
+
+.news-list {
+    padding-top: 50px;
+    padding-left: 7%;
+    padding-right: 7%;
+    width: 100%;
+}
+
+.news-list .news-list-container {
+    width: 100%;
+}
+
+.news-list .news-list-container .news-list-row {
+    padding: 20px 30px;
+    min-height: 600px;
+}
+
+.news-list .news-list-container .news-list-row .card.news-item {
+    height: 100%;
+    box-shadow: 2px 7px 10px 0px rgba(0, 0, 0, 0.14) !important;
+    border: none;
+
+}
+
+.news-list .news-list-container .news-list-row .card.news-item img {
+    height: 258px;
+}
+.news-list .news-list-container .news-list-row .card.news-item .card-body {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.news-list .news-list-container .news-list-row .card.news-item .card-body .card-title{
+    font-size: 17px;
+    display: flex;
+}
+
+.news-list .news-list-container .news-list-row .card.news-item .card-body .card-content {
+    display: flex;
+    display: -webkit-box; /* Enable flexbox layout */
+    -webkit-box-orient: vertical; /* Set the box orientation to vertical */
+    -webkit-line-clamp: 3; /* Limit to 3 lines */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Add ellipsis for overflow */
+    max-height: 4.5em; /* Adjust based on line height (line-height * number of lines) */
+    line-height: 1.5em; /* Adjust line height as needed */
+    font-size: 12px;
+}
+
+.news-list .news-list-container .news-list-row .card.news-item .card-body .created-at {
+    display: flex;
+    font-size: 11px;
+}

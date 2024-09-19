@@ -1,0 +1,36 @@
+.navbar {
+    background-color: #1b5071;
+    color:#b0dae6;
+}
+
+.lsBar{
+    background-color: #1b3a54;
+    color:#b0dae6;
+}
+
+.btnYellow {
+    background-color: #fbe949 ;
+    border-color: #fbe949;
+    color: #1b3a54;
+}
+
+.btnYellow:hover {
+    background-color: #f5eeb7;
+    color: #1b3a54;
+    border-color: #f5eeb7;
+}
+
+.bgGradient{
+    background-color: #1b3a54;
+    color:#fff;
+}
+
+.bgGradient:hover{
+    background-color: #1b3a54;
+    color:#fff;
+}
+
+.bgGradient:focus{
+    background-color: #1b3a54;
+    color:#fff;
+}

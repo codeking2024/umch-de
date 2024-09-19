@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 1051 634.1">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #004f71;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+        stroke-width: 0px;
+      }
+
+      .cls-10 {
+        filter: url(#luminosity-noclip-2);
+      }
+
+      .cls-11 {
+        filter: url(#luminosity-noclip-3);
+      }
+
+      .cls-12 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-13 {
+        mask: url(#mask);
+      }
+
+      .cls-14 {
+        filter: url(#luminosity-noclip);
+      }
+
+      .cls-3 {
+        fill: url(#Unbenannter_Verlauf_7-3);
+      }
+
+      .cls-4 {
+        fill: url(#Unbenannter_Verlauf_7-2);
+      }
+
+      .cls-5 {
+        fill: url(#Unbenannter_Verlauf_6-2);
+      }
+
+      .cls-15 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-16 {
+        clip-path: url(#clippath-4);
+      }
+
+      .cls-17 {
+        clip-path: url(#clippath-3);
+      }
+
+      .cls-18 {
+        clip-path: url(#clippath-2);
+      }
+
+      .cls-19 {
+        clip-path: url(#clippath-7);
+      }
+
+      .cls-20 {
+        clip-path: url(#clippath-8);
+      }
+
+      .cls-21 {
+        clip-path: url(#clippath-6);
+      }
+
+      .cls-22 {
+        clip-path: url(#clippath-5);
+      }
+
+      .cls-23 {
+        clip-path: url(#clippath-9);
+      }
+
+      .cls-24 {
+        clip-path: url(#clippath-14);
+      }
+
+      .cls-25 {
+        clip-path: url(#clippath-13);
+      }
+
+      .cls-26 {
+        clip-path: url(#clippath-12);
+      }
+
+      .cls-27 {
+        clip-path: url(#clippath-10);
+      }
+
+      .cls-28 {
+        clip-path: url(#clippath-15);
+      }
+
+      .cls-29 {
+        clip-path: url(#clippath-16);
+      }
+
+      .cls-30 {
+        clip-path: url(#clippath-11);
+      }
+
+      .cls-6 {
+        fill: url(#Unbenannter_Verlauf_7);
+      }
+
+      .cls-7 {
+        fill: url(#Unbenannter_Verlauf_6);
+      }
+
+      .cls-8 {
+        fill: url(#Unbenannter_Verlauf_3);
+      }
+
+      .cls-9 {
+        fill: url(#Unbenannter_Verlauf_2);
+      }
+
+      .cls-31 {
+        opacity: .1;
+      }
+
+      .cls-32 {
+        opacity: .2;
+      }
+
+      .cls-33 {
+        opacity: .9;
+      }
+
+      .cls-34 {
+        opacity: .8;
+      }
+
+      .cls-35 {
+        mask: url(#mask-2);
+      }
+
+      .cls-36 {
+        mask: url(#mask-1);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-2" x="120.1" y="0" width="930.9" height="634"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect class="cls-2" x="137.7" y="0" width="232.5" height="234.8"/>
+    </clipPath>
+    <filter id="luminosity-noclip" x="-262.7" y="-1112.8" width="2106" height="2686.6" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <linearGradient id="Unbenannter_Verlauf_7" data-name="Unbenannter Verlauf 7" x1="151.5" y1="503.3" x2="152.5" y2="503.3" gradientTransform="translate(-137713.9 -41265.8) rotate(90) scale(274.1 -274.1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#000"/>
+    </linearGradient>
+    <mask id="mask" x="-262.7" y="-1112.8" width="2106" height="2686.6" maskUnits="userSpaceOnUse">
+      <g class="cls-14">
+        <rect class="cls-6" x="96.8" y="-40.3" width="314.3" height="315.3" transform="translate(-25.5 129.8) rotate(-27.4)"/>
+      </g>
+    </mask>
+    <clipPath id="clippath-2">
+      <rect class="cls-2" x="-262.7" y="-1112.8" width="2106" height="2686.6"/>
+    </clipPath>
+    <clipPath id="clippath-3">
+      <rect class="cls-2" x="-2.6" y="-533.4" width="1516.2" height="3281.3"/>
+    </clipPath>
+    <clipPath id="clippath-4">
+      <path class="cls-2" d="M839.5-497.1C472.3-516.4,137,184.7,90.7,1068.9c-46.3,884.1,213.8,1616.4,581.1,1635.7,367.2,19.2,702.5-681.9,748.8-1566,46.3-884.1-213.8-1616.4-581.1-1635.7"/>
+    </clipPath>
+    <linearGradient id="Unbenannter_Verlauf_2" data-name="Unbenannter Verlauf 2" x1="151.2" y1="504.9" x2="152.2" y2="504.9" gradientTransform="translate(445463.8 -1479098) rotate(180) scale(2931.5 -2931.5)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#a8dae5"/>
+      <stop offset="0" stop-color="#a1d8e5"/>
+      <stop offset="0" stop-color="#69cee8"/>
+      <stop offset=".2" stop-color="#3ec5eb"/>
+      <stop offset=".2" stop-color="#1ebfed"/>
+      <stop offset=".3" stop-color="#0bbcee"/>
+      <stop offset=".3" stop-color="#05bbef"/>
+      <stop offset=".4" stop-color="#05abdc"/>
+      <stop offset=".6" stop-color="#096c94"/>
+      <stop offset=".7" stop-color="#0c4567"/>
+      <stop offset=".8" stop-color="#0d3756"/>
+      <stop offset="1" stop-color="#0d3756"/>
+    </linearGradient>
+    <clipPath id="clippath-5">
+      <path class="cls-2" d="M306.1,0c-.3.6-72.6,162.4-110.3,300.3-37.8,138.1-75.6,333.8-75.6,333.8h930.9V0H306.1Z"/>
+    </clipPath>
+    <linearGradient id="Unbenannter_Verlauf_3" data-name="Unbenannter Verlauf 3" x1="151.4" y1="505.8" x2="152.4" y2="505.8" gradientTransform="translate(320855.8 -95836.3) rotate(90) scale(633.2)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#64c7f3"/>
+      <stop offset="0" stop-color="#64c7f3"/>
+      <stop offset=".5" stop-color="#34b2e3"/>
+      <stop offset="1" stop-color="#009cd3"/>
+    </linearGradient>
+    <clipPath id="clippath-6">
+      <rect class="cls-2" x="120.1" y="0" width="930.9" height="634"/>
+    </clipPath>
+    <clipPath id="clippath-7">
+      <rect class="cls-2" x="338.9" y="-9" width="720.1" height="650.8"/>
+    </clipPath>
+    <clipPath id="clippath-8">
+      <rect class="cls-2" x="340" y="0" width="711.1" height="632.7"/>
+    </clipPath>
+    <clipPath id="clippath-9">
+      <rect class="cls-2" x="-1051.9" y="-2161.6" width="3985" height="3120.3"/>
+    </clipPath>
+    <filter id="luminosity-noclip-2" x="-2325.2" y="-3787.7" width="6531.7" height="6372.7" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <linearGradient id="Unbenannter_Verlauf_7-2" data-name="Unbenannter Verlauf 7" x1="151.1" y1="504.8" x2="152.1" y2="504.8" gradientTransform="translate(-204753.7 61239.3) rotate(-90) scale(407.5)" xlink:href="#Unbenannter_Verlauf_7"/>
+    <mask id="mask-1" x="-2325.2" y="-3787.7" width="6531.7" height="6372.7" maskUnits="userSpaceOnUse">
+      <g class="cls-10">
+        <rect class="cls-4" x="-1360.5" y="-3088" width="4602.4" height="4973.2" transform="translate(1042.7 510.4) rotate(-62.6)"/>
+      </g>
+    </mask>
+    <clipPath id="clippath-10">
+      <rect class="cls-2" x="-1051.9" y="-2161.6" width="3985" height="3120.3"/>
+    </clipPath>
+    <clipPath id="clippath-11">
+      <path class="cls-2" d="M2569.8,311c-197.8,353.2-1086.1,231.7-1984.2-271.2C-312.4-463.2-880.1-1157.2-682.3-1510.3c197.8-353.2,1086.1-231.7,1984.2,271.2C2199.9-736.2,2767.6-42.2,2569.8,311"/>
+    </clipPath>
+    <linearGradient id="Unbenannter_Verlauf_6" data-name="Unbenannter Verlauf 6" x1="151.1" y1="504.9" x2="152.2" y2="504.9" gradientTransform="translate(-1719871.7 516235.5) rotate(-90) scale(3408.2)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#004f71"/>
+      <stop offset="1" stop-color="#002d48"/>
+    </linearGradient>
+    <clipPath id="clippath-12">
+      <rect class="cls-2" x="643" y="-1" width="417" height="642.8"/>
+    </clipPath>
+    <clipPath id="clippath-13">
+      <rect class="cls-2" x="652.1" y="0" width="398.9" height="633.7"/>
+    </clipPath>
+    <clipPath id="clippath-14">
+      <rect class="cls-2" x="640.2" y="-1706.6" width="1746.5" height="3381.4"/>
+    </clipPath>
+    <filter id="luminosity-noclip-3" x="39.8" y="-2016.7" width="2947.2" height="4001.6" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <linearGradient id="Unbenannter_Verlauf_7-3" data-name="Unbenannter Verlauf 7" x1="150.8" y1="505" x2="151.8" y2="505" gradientTransform="translate(-176133.8 53283.5) rotate(-90) scale(351.8)" xlink:href="#Unbenannter_Verlauf_7"/>
+    <mask id="mask-2" x="39.8" y="-2016.7" width="2947.2" height="4001.6" maskUnits="userSpaceOnUse">
+      <g class="cls-11">
+        <rect class="cls-3" x="349.3" y="-1836.5" width="2328.2" height="3641.1" transform="translate(27.7 272.9) rotate(-10.4)"/>
+      </g>
+    </mask>
+    <clipPath id="clippath-15">
+      <rect class="cls-2" x="640.2" y="-1706.6" width="1746.5" height="3381.4"/>
+    </clipPath>
+    <clipPath id="clippath-16">
+      <path class="cls-2" d="M1751.8,1578.9c-345.6,51.7-732.3-619-863.6-1497.8-131.4-878.9,42.3-1633.2,388-1684.9,345.6-51.7,732.3,619,863.6,1497.8,131.4,878.9-42.3,1633.2-388,1684.9"/>
+    </clipPath>
+    <linearGradient id="Unbenannter_Verlauf_6-2" data-name="Unbenannter Verlauf 6" x1="151.1" y1="504.9" x2="152.1" y2="504.9" gradientTransform="translate(-1484236.3 446113.9) rotate(-90) scale(2942.5)" xlink:href="#Unbenannter_Verlauf_6"/>
+  </defs>
+  <g class="cls-12">
+    <g class="cls-15">
+      <g class="cls-13">
+        <g class="cls-18">
+          <path class="cls-1" d="M175.9-866.6C-61.7-733.5,20-135.8,358.4,468.4c338.4,604.2,805.3,986.2,1042.9,853.1,237.6-133.1,155.9-730.8-182.5-1335C880.5-617.7,413.5-999.6,175.9-866.6"/>
+        </g>
+      </g>
+      <g class="cls-33">
+        <g class="cls-17">
+          <g class="cls-16">
+            <rect class="cls-9" x="-899.4" y="308.6" width="3310.2" height="1590.2" transform="translate(-386.1 1800.6) rotate(-87)"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g class="cls-22">
+      <rect class="cls-8" x="120.1" y="0" width="930.9" height="634"/>
+    </g>
+    <g class="cls-21">
+      <g class="cls-31">
+        <g class="cls-19">
+          <g class="cls-20">
+            <g class="cls-34">
+              <g class="cls-23">
+                <g class="cls-36">
+                  <g class="cls-27">
+                    <g class="cls-30">
+                      <rect class="cls-7" x="-1050.1" y="-2808.5" width="3987.7" height="4417.6" transform="translate(1005.8 516.7) rotate(-60.8)"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g class="cls-32">
+        <g class="cls-26">
+          <g class="cls-25">
+            <g class="cls-34">
+              <g class="cls-24">
+                <g class="cls-35">
+                  <g class="cls-28">
+                    <g class="cls-29">
+                      <rect class="cls-5" x="522.2" y="-1749.4" width="1983.4" height="3473.8" transform="translate(18.5 223.6) rotate(-8.5)"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

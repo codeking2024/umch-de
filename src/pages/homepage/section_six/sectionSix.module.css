@@ -1,0 +1,70 @@
+.bgWithImage {
+    position: relative; /* Ensure the pseudo-element is positioned relative to the parent */
+}
+
+
+.bgWithImage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("/bilder/Blue Color gradient2.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 150px auto;
+    transform: scaleX(-1); /* Flip the image horizontally */
+}
+.bgGradient {
+    background: rgb(100,199,242);
+    background: linear-gradient(90deg, rgba(100,199,242,1) 0%, rgba(0,79,112,1) 67%);
+}
+
+.bgDark {
+    background: rgb(0,79,112);
+    background: linear-gradient(0deg, rgba(0,79,112,1) 0%, rgba(0,45,71,1) 100%);
+}
+
+.bgGray {
+    /*grey #778693 #dfe4e8*/
+    background-color: #dfe4e8;
+}
+
+.imgFit {
+    height: 200px !important;
+    object-fit: cover;
+}
+.imgObjectFit {
+    object-fit: cover;
+}
+
+.btnYellow {
+    background-color: #fbe949 ;
+    border-color: #fbe949;
+    color: #1b3a54;
+}
+
+.btnYellow:hover {
+    background-color: #f5eeb7;
+    color: #1b3a54;
+    border-color: #f5eeb7;
+}
+
+
+.ListItemCustom {
+    position: relative;
+    padding-left: 40px; /* Adjust according to your marker size */
+}
+
+.ListItemCustom::before {
+    content: ""; /* The content is still empty, but we are using a background image */
+    position: absolute;
+    left: 0;
+    top: 10%;
+    width: 24px; /* Adjust size as needed */
+    height: 24px; /* Adjust size as needed */
+    background-image: url('/icon/Icon Calender.svg'); /* Path to your SVG file */
+    background-size: contain; /* Ensure the SVG scales correctly */
+    background-repeat: no-repeat; /* Prevent the SVG from repeating */
+}

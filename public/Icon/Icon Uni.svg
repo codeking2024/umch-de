@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_2" data-name="Ebene 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 43.8 44.4">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-2, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-3 {
+        stroke: #ffea43;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.4px;
+      }
+
+      .cls-4 {
+        fill: #ffea43;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-2" width="43.8" height="44.4"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect class="cls-2" width="43.8" height="44.4"/>
+    </clipPath>
+  </defs>
+  <g id="Ebene_1-2" data-name="Ebene 1">
+    <g class="cls-1">
+      <g>
+        <polyline class="cls-3" points="14.6 43.7 14.6 30.1 29.4 30.1 29.4 43.6"/>
+        <polyline class="cls-3" points="10.4 22.4 10.4 .7 33.4 .7 33.4 22.8"/>
+        <path class="cls-3" d="M34.2,14.4h8.9v29.1M9.6,14.4H.7v29.1"/>
+        <polyline class="cls-3" points="14.5 29.9 9.2 26.6 9.2 43.7"/>
+      </g>
+    </g>
+    <rect class="cls-4" x="17.1" y="5.7" width="3.8" height="3.8"/>
+    <rect class="cls-4" x="23.7" y="5.7" width="3.8" height="3.8"/>
+    <rect class="cls-4" x="17.1" y="13.3" width="3.8" height="3.8"/>
+    <rect class="cls-4" x="23.7" y="13.3" width="3.8" height="3.8"/>
+    <rect class="cls-4" x="17.1" y="20.8" width="3.8" height="3.8"/>
+    <rect class="cls-4" x="23.7" y="20.8" width="3.8" height="3.8"/>
+    <g class="cls-5">
+      <polyline class="cls-3" points="29.5 29.9 34.8 26.6 34.8 43.7"/>
+    </g>
+  </g>
+</svg>
