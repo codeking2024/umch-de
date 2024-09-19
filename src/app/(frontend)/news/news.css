@@ -48,12 +48,20 @@
     height: 100%;
     box-shadow: 2px 7px 10px 0px rgba(0, 0, 0, 0.14) !important;
     border: none;
+    overflow: hidden; /* Ensure content stays within the card */
+    transition: transform 0.3s ease; /* Smooth transition for the card */
+}
 
+.news-list-container .news-list-row .card.news-item:hover .card-img-top {
+    transform: scale(1.1); /* Zoom in effect on the image when the card is hovered */
 }
 
 .news-list .news-list-container .news-list-row .card.news-item img {
+    transition: transform 0.3s ease;
+    width: 100%; /* Ensure the image fits the card */
     height: 280px;
 }
+
 .news-list .news-list-container .news-list-row .card.news-item .card-body {
     padding: 30px;
     display: flex;
