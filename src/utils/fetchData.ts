@@ -27,7 +27,6 @@ export async function fetchData(query: string) {
     const data = await client.fetch(query);
     return data;
   } catch (error) {
-    console.error("Failed to fetch data from Sanity:", error);
     throw new Error("Data fetch failed"); // Rethrow a new error with a user-friendly message
   }
 }
