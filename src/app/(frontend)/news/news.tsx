@@ -41,6 +41,7 @@ function News() {
 
     useEffect(() => {
         const handleLangEvent = (lang: string) => {
+            setLoading(true);
             fetchNewsData(lang);
         }
 
