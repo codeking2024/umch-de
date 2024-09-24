@@ -81,7 +81,7 @@ function Index() {
                 </div >
 
                 <div className='campus-practise-slider position-relative py-5 my-5 px-5-pro'>
-                    <ReactCarouselComponent />
+                    <ReactCarouselComponent data={[]} />
                 </div >
 
                 <div className='campus-practise-slider2 py-5 px-5-pro'>
