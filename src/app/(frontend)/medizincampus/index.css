@@ -1,0 +1,45 @@
+.campus-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.campus-introduction {
+    background-image: url("/bilder/Blue Color gradient2.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 150px auto;
+    width: 100%;
+}
+
+.campus-container .campus-banner {
+    display: flex;
+    height: 50vh;
+    overflow: hidden;
+    background-color: white;
+}
+.campus-container .campus-title {
+    position: absolute;
+    width: 100%;
+    text-transform: uppercase;
+    color: white;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.campus-container .campus-banner .campus-banner-bg img {
+    width: 100%;
+}
+
+.campus-container .campus-introduction .campus-practise-slider2 {
+    width: 100%;
+    background-color: #dfe4e8;
+}
+
+.px-5-pro {
+    padding: 0 5%;
+}
